@@ -1,0 +1,50 @@
+/* 
+  style.css (初期状態)
+  
+  注意：
+  第5回は「HTMLによる文書構造化」のみを行うため，CSSファイルを編集する必要はありません．
+  構造化が行われた結果が分かりやすくなるよう，最小限のスタイル（枠線など）だけが定義されています．
+  ビジュアルデザイン（装飾）は第6回の授業で行います．
+*/
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+/* 
+  表（テーブル）が作成された際に，
+  枠線が自動的に表示されて構造が確認しやすくなるための記述です．
+*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* 
+  リスト（箇条書き）が作成された際の余白調整です．
+*/
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
