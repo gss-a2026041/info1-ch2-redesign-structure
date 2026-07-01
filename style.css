@@ -54,3 +54,129 @@ li {
 .red-text {
   color: red;
 }
+h1 {
+    font-size: 3rem; /*100 */
+    margin-bottom: 0.8rem;
+}
+body {
+    font-size: 1.1rem; /* 文字を少し大きめに */
+    line-height: 1.8;  /* 行間を広げて読みやすく */
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 0.8rem;
+}
+/* 既存の body / h1 / h2 / ul / table 周りをこのコードに置き換えます */
+
+    
+    body {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #333;
+    background: linear-gradient(135deg,
+        #ffafbd 0%,
+        #ffc3a0 20%,
+        #f6d365 40%,
+        #fdffb6 55%,
+        #c6ffdd 70%,
+        #8fd3f4 85%,
+        #a18cd1 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 8%),
+      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 7%),
+      radial-gradient(circle at 35% 65%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 6%),
+      radial-gradient(circle at 75% 80%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 5%);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1f4f8b;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 18px 16px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #6fa8dc, #93c47d);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(31, 79, 139, 0.16);
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-top: 28px;
+    margin-bottom: 0.8rem;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #ffebc8;
+    color: #8a4b00;
+}
+
+p, li, td {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 24px;
+    background: #fff8f0;
+    border: 1px solid #ffd6b3;
+    border-radius: 14px;
+    padding: 16px 24px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #f2c8b8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #f4d0c0;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+
+
+.red-text {
+    color: #d33;
+}
+p, li, td {
+    font-size: 1.1rem;
+}
+
+section {
+    margin-bottom: 25px;
+}
